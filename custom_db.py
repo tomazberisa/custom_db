@@ -4,7 +4,7 @@ import commanderline.commander_line as cl
 import pandas as pd
 import gzip
 
-def custom_db(db_gz, gt_23andMe_gz, n_snps=100000, out_file_gz='out-db.txt.gz'):
+def custom_db(db_gz, gt_23andMe_gz, n_snps=100000, out_file_gz='out_custom_db.txt.gz'):
     '''
 +-----------+
 | custom_db |
