@@ -21,7 +21,7 @@ commanderline
     print('Reading 23andMe file...')
     gt=pd.read_csv(gt_23andMe_gz, compression='gzip', usecols=[1,2], sep='\t', comment='#', header=None)
     gt.columns=['chr','pos']
-    print('Merging...')
+    print('Merging on chr&pos...')
     m=pd.merge(db, gt, on=['chr','pos'])
     print('Sorting by F_ST...')
     m=m.sort_values(by='fst', ascending=False)
