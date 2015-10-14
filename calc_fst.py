@@ -23,7 +23,7 @@ def calc_fst(ref_gz, out_gz='out_db_fst.txt.gz'):
 | calc_fst |
 +----------+
 
-Helper script to calculate F_ST for Ancestry-format reference files. Output is the input file with an additional column named 'fst'
+Helper script to calculate F_ST for Ancestry-format reference files. Output is the input file with an additional column named 'fst' (SNPs with NaN for F_ST are removed)
 
 Details about Ancestry:
 https://bitbucket.org/joepickrell/ancestry
