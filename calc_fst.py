@@ -36,7 +36,7 @@ commanderline
     d=pd.read_csv(ref_gz, sep=' ')
     # Drop null columns, e.g., last column followed by a column delimiter will result in a null column
     d=d.dropna(axis=1,how='all')
-    print('Calculatng F_ST...')
+    print('Calculating F_ST...')
     d['fst']=d.iloc[:,6:].apply(fst, axis=1) 
     # Drop SNPs without F_ST
     d=d.dropna(subset=['fst'])
