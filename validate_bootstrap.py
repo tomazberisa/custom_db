@@ -47,8 +47,21 @@ ancestry_translation = { "ARABIAN" : "NEAREAST",
 }
 
 def validate_bootstrap(file_list, negligible_threshold=0.01, bootstrap_confidence=0.8):
-     # first file in file_list is file containing results without bootstrap, remaining files are bootstrap results
-     
+     '''
++--------------------+
+| validate_bootstrap |
++--------------------+
+
+Script that takes into account bootstrap replicates and outputs estimated "super-ancestries". Main input is a text file, where the first line is the .Q output filename of a regular Ancestry run and remaining lines are the .Q files of bootstrap replicates.
+
+Details about Ancestry:
+https://bitbucket.org/joepickrell/ancestry
+
+Package dependencies:
+pandas
+commanderline
+'''
+
      results=pd.DataFrame()
 
      with open(file_list, 'rt') as f_in:
