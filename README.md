@@ -7,9 +7,13 @@ Package dependencies:
 - commanderline
 
 custom_db arguments (and defaults if defined):
+
   --db_gz
+
   --gt_23andMe_gz
+
   --n_snps=100000
+
   --out_file_gz='out_custom_db.txt.gz'
 
 # calc_fst
@@ -24,7 +28,9 @@ Package dependencies:
 - commanderline
 
 calc_fst arguments (and defaults if defined):
+
   --ref_gz
+
   --out_gz='out_db_fst.txt.gz'
 
 # validate_bootstrap
