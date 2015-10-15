@@ -20,8 +20,8 @@ Details about Ancestry:
 https://bitbucket.org/joepickrell/ancestry
 
 Package dependencies:
-pandas
-commanderline
+- pandas
+- commanderline
 
 calc_fst arguments (and defaults if defined):
   --ref_gz
@@ -35,10 +35,14 @@ Details about Ancestry:
 https://bitbucket.org/joepickrell/ancestry
 
 Package dependencies:
-pandas
-commanderline
+- pandas
+- commanderline
 
 validate_bootstrap arguments (and defaults if defined):
+
   --file_list
+  
   --negligible_threshold=0.01
+  
   --bootstrap_confidence=0.8
+  
